@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+</head>
+<body>
+    <header class="titulo">
+        Blackjack
+    </header>
+
+    <div class="row mt-2"> 
+        <div id ="divButtons" class="col text-center" >
+        <button id = "btnNew" class="btn btn-danger">New Game</button>
+        <button id = "btnCall" class="btn btn-primary">Call</button>
+        <button id = "btnStop" class="btn btn-primary">Stop</button>
+        </div>
+
+    </div>
+    <div class="row container">
+        <div class="col">
+
+            <h1>Player 1 - <small id="playerPoints">0</small>   </h1>
+            <div id="player-cards" class="divCards">
+                <!-- <img class="cards" src="assets/cartas/AS.png" alt=""> -->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row container mt-2s">
+        <div class="col">
+
+            <h1>CPU - <small id="cpuPoints">0</small>   </h1>
+            <div id="cpu-cards" class="divCards">
+                <!-- <img class="cards" src="assets/cartas/AS.png" alt="">
+                <img class="cards" src="assets/cartas/AS.png" alt=""> -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/underscore.js"></script>
+    <script src="assets/js/game-min.js"></script>
+    <script>
+        module.newGame();
+    </script>
+</body>
+</html>
+
